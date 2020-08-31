@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background: url(/assets/images/icon-header.png);
+    background-size: 47em;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 700px;
+    /* background-color: #e4ded3; */
+    background-color: #d3cdd4;
+}
+
+nav {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* background-color: white; */
+    display: flex;
+    background-color: #d3cdd4;
+    /* background-color: #cbc5ba; */
+    /* background-color: #ffffff; */
+    opacity: 0.8;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.brand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    z-index: 0;
+    font-size: 1.5em;
+    /* color: #8B6231; */
+}
+
+.text-header {
+    /* background-color: #cbc5ba;
+    opacity: 0.6; */
+    margin-left: 15%;
+    position: relative;
+    top: 250px;
+    width: 40%;
+    /* padding-top: 25%; */
+    /* padding-left: 15%; */
+    /* background-color: #6b4843;
+    opacity: 0.6;
+    filter: alpha(opacity=60);  */
+    /* color: #8B6231; */
+    font-size: 2.2em;
+}
+
+.text-header h3 {
+    font-family: cursive;
+    font-size: 1.4em;
+}
+
+.text-header p {
+    margin: 10px;
+    font-size: 0.5em;
+    color: rgb(70, 70, 70);
+}
+
+.button {
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    /* border-radius: 20px; */
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ready {
+    padding: 15px 25px;
+    background-color: #f5bb0d;
+    margin-bottom: 20px;
+}
+
+.ready a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.ready:hover {
+    background-color: #d8a200;
+    font-size: 0.4em;
+}
+
+/* navigation */
+main {
+    margin: 20px 0;
+}
+
+.title-category {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.category {
+    margin-left: 15%;
+    width: 70%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.category a {
+    margin-right: 4%;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.category-menu {
+    width: 300px;
+}
+
+.container-search {
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    position: relative;
+    left: 15%;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /* background-image: url(https://image.flaticon.com/icons/svg/622/622669.svg);
+    background-position: 10px 10px; 
+    background-repeat: no-repeat; */
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+form input:focus {
+    width: 71%;
+}
+
+.container {
+    display: inline-block;
+    width: 35%;
+    margin: 10px;
+    position: relative;
+    left: 14%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+}
+
+.recipe {
+    padding: 10px 20px;
+    border-top: solid 1px grey;
+}
+
+.star-icon {
+    position: relative;
+    color: white;
+    font-size: 2em;
+    left: 80%;
+    margin-bottom: 5px;
+}
+
+.recipe h5 {
+    width: 30%;
+    position: relative;
+    text-align: center;
+    left: 70%;
+    background-color: red;
+    color: white;
+}
+
+.more {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+}
+
+.more a {
+    text-decoration: none;
+    color: white;
+}
+
+.more:hover {
+    background-color: black;
+}
+
+.recomend {
+    display: none;
+}
+
+.step {
+    display: none;
+    padding: 10px 20px;
+}
+
+.btn-recomend {
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    color: white;
+}
+
+.share {
+    text-align: center;
+}
+
+.share a {
+    color: black;
+    font-size: 1.6em;
+}
+
+.fa-instagram {
+    padding: 3px;
+    color: white;
+    background: linear-gradient(45deg, #fab164 0%,#e4815e 25%,#e25066 50%,#cc4d80 75%,#b64291 100%);
+}
+
+.fa-twitter {
+    padding: 3px;
+    color: white;
+    background-color: #00acee;
+}
+
+.fa-facebook {
+    padding: 3px;
+    color: white;
+    background-color: #3b5998;
+}
+
+.fa-whatsapp {
+    padding: 3px;
+    color: white;
+    background-color: #4ac959;
+}
+
+
+
+/* .step p {
+    text-align: center;
+}
+
+.step a {
+    color: black;
+    font-size: 1.6em;
+    text-align: center;
+} */
+
+/* .step {
+    display: none;
+} */
+
+.stars {
+    color: white
+}
+
+.fa-heart {
+    color: #f5bb0d;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        background-color: #d3cdd4;
+    }
+
+    header {
+        background-size: 35em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 600px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .text-header {
+        display: none;
+        /* margin-left: 0px;
+        margin: 0 10%;
+        position: relative;
+        top: 580px;
+        width: 80%; */
+    }    
+
+    .container {
+        width: 70%;
+        left: 14%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        background-color: #d3cdd4;
+    }
+
+    header {
+        background-size: 35em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 600px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .text-header {
+        display: none;
+        /* margin-left: 0px;
+        margin: 0 10%;
+        position: relative;
+        top: 580px;
+        width: 80%; */
+    }    
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 603px) {
+    nav {
+        background-color: #d3cdd4;
+    }
+
+    header {
+        background-size: 35em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 600px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .text-header {
+        display: none;
+        /* margin-left: 0px;
+        margin: 0 10%;
+        position: relative;
+        top: 580px;
+        width: 80%; */
+    }    
+
+    .container {
+        width: 70%;
+        left: 13%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-size: 35em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 600px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .text-header {
+        display: none;
+        /* margin-left: 0px;
+        margin: 0 10%;
+        position: relative;
+        top: 580px;
+        width: 80%; */
+    }    
+
+    .container {
+        width: 70%;
+        left: 13%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        background-size: 30em;
+        min-height:530px;
+    }
+
+    /* .text-header {
+        top: 490px;
+    }     */
+}
+
+@media screen and (max-width: 480px) {
+    .brand h3 {
+        position: relative;
+        right: 8%;
+    }
+
+    header {
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 550px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .brand h3 {
+        position: relative;
+        right: 8%;
+    }
+
+    header {
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 550px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .brand h3 {
+        position: relative;
+        right: 8%;
+    }
+
+    header {
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 550px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .brand h3 {
+        position: relative;
+        right: 8%;
+    }
+
+    header {
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 550px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .brand h3 {
+        position: relative;
+        right: 2%;
+    }
+
+    header {
+        background-size: 35em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 700px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .brand h3 {
+        position: relative;
+        right: 5%;
+    }
+
+    header {
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 500px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .brand h3 {
+        position: relative;
+        right: 5%;
+    }
+
+    header {
+        background-size: 30em;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 500px;
+        /* background-color: #e4ded3; */
+        background-color: #d3cdd4;
+    }
+
+    .container {
+        width: 70%;
+        left: 12%;
+    }
+}
+
+/* Footer */
+footer {
+    height: 50px;
+    padding-top: 12px;
+    color: rgb(0, 0, 0);
+    background-color: #d3cdd4;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.copyright {
+    font-family: cursive;
+}
